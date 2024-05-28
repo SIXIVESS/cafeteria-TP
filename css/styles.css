@@ -1,0 +1,291 @@
+/*------------------------------------------------------------
+COLORES
+------------------------------------------------------------*/
+:root {
+  --lightgreen: #f0ead2;
+  --green: #dde5b6;
+  --darkgreen: #adc178;
+  --lightbrown: #a98467;
+  --brown: #6c584c;
+  --blueish: #727d71;
+}
+
+/*------------------------------------------------------------
+FONT
+------------------------------------------------------------*/
+
+.radio-canada-big-normal {
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.radio-canada-big-negrita {
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body,
+header {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------------------------
+HEADER
+------------------------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0ead2;
+}
+
+/*------------------------------------------------------------
+NAVEGACION
+------------------------------------------------------------*/
+nav {
+  width: 100%;
+  background-color: #88796c;
+}
+
+.container-logo img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #301700;
+}
+
+/*------------------------------------------------------------
+ANIMACION DEL HEADER
+------------------------------------------------------------*/
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*------------------------------------------------------------
+GALERIA DEL MAIN
+------------------------------------------------------------*/
+.galeria {
+  background-color: #f0ead2;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.galeria div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.galeria img {
+  max-width: 60%;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+/*------------------------------------------------------------
+SECCION DE CAFES
+------------------------------------------------------------*/
+.cafes {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cafes-inner {
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.cafe-titulo {
+  margin-bottom: 10px;
+  color: #6c584c;
+  font-size: 50px;
+}
+
+.cafe-descripcion {
+  margin-bottom: 20px;
+  color: #88796c;
+}
+
+.cafe-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cafe-item {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cafe-item-texto {
+  background: #727d71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.cafe-item-img img {
+  max-width: 100%;
+  height: auto;
+}
+.cafe-item li {
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+/*------------------------------------------------------------
+SECCION CAFETERAS DEL MAIN
+------------------------------------------------------------*/
+.cafeteras {
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  margin-top: 10%;
+  background-color: #f0ead2;
+}
+.cafeteras-mensaje {
+  font-size: 2rem;
+  color: #727d71;
+  text-align: center;
+  padding: 20px;
+  background-color: #dde5b6;
+}
+
+/*------------------------------------------------------------
+CONTADOR
+------------------------------------------------------------*/
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+ 
+}
+
+.countdown-title {
+  font-size: 2rem;
+  color: #727d71;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6c584c;
+  background-color: white;
+  border-radius: 35%;
+}
+
+.countdown-timer span {
+  margin: 0 10px;
+}
+
+/*------------------------------------------------------------
+FOOTER
+------------------------------------------------------------*/
+footer {
+    background-color: #88796c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .f-texto {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+.f-img{
+    padding-bottom: 15px;
+}
+
+/*------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------*/
+@media (max-width: 768px) {
+  nav ul {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

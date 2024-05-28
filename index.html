@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- LOGO -->
+    <div class="container-logo">
+      <h1 class="h-logo">
+        <a href="index.html">
+          <img src="img/Dulce Aroma.png" />
+        </a>
+      </h1>
+    </div>
+
+    <!-- NAVEGADOR -->
+    <nav class="radio-canada-big-normal">
+      <ul>
+        <li><a href="#">Menú</a></li>
+        <li><a href="#">Café</a></li>
+        <li><a href="#">Cafeteras</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </nav>
+
+    <!-- SLIDESHOW PROMOS -->
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="img/slide1.png" style="width:100%">
+      </div>
+      <div class="slide fade">
+        <img src="img/slide2.png" style="width:100%">
+      </div>
+
+    </div>
+  </header>
+
+
+  <main class="m-container">
+    <!-- GALERIA DE CAFÉS -->
+    <section class="galeria">
+      <div m-img-uno>
+        <img src="img/cafe1.png">
+      </div>
+      <div m-img-dos>
+        <img src="img/cafe2.png">
+      </div>
+      <div m-img-tres>
+        <img src="img/cafe3.png">
+      </div>
+    </section>
+
+    <!-- CAFES -->
+    <section class="cafes">
+      <div class="cafes-inner">
+        <h1 class="cafe-titulo radio-canada-big-negrita">
+          <span>Mejores cafés</span>
+        </h1>
+        <p class="cafe-descripcion radio-canada-big-normal">
+          Nuestra selección de cafés mexicanos
+        </p>
+        <div class="cafe-items radio-canada-big-negrita">
+          <ul class="cafe-item">
+            <li>
+              <a>
+                <div class="cafe-item-img">
+                  <img src="img/affogato.png" alt="Dulce Aroma Café">
+                </div>
+                <div class="cafe-item-texto">
+                  <p>Affogato</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div class="cafe-item-img">
+                  <img src="img/americano.png" alt="Café 2">
+                </div>
+                <div class="cafe-item-texto">
+                  <p>Americano</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="cafe-item">
+            <li>
+              <a>
+                <div class="cafe-item-img">
+                  <img src="img/capuccino.png" alt="Café 3">
+                </div>
+                <div class="cafe-item-texto">
+                  <p>Capuccino</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a>
+                <div class="cafe-item-img">
+                  <img src="img/moka caliente.png" alt="Café 4">
+                </div>
+                <div class="cafe-item-texto">
+                  <p>Moka caliente</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAFETERAS -->
+    <section class="cafeteras">
+      <p class="cafeteras-mensaje radio-canada-big-negrita">En construcción.</p>
+      <div class="countdown-container">
+        <p class="countdown-title radio-canada-big-normal">¡Nuestro catálogo de cafeteras está en camino!</p>
+        <div class="countdown-timer radio-canada-big-normal">
+          <span id="days">0</span>
+          <span id="hours">0</span>
+          <span id="minutes">0</span>
+          <span id="seconds">0</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="f-img">
+      <img src="img/Dulce Aroma blanco.png">
+    </div >
+    <p class="f-texto radio-canada-big-normal"> © SIXIVESS, 2024.</p>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/countdown.js"></script>
+
+
+</body>
+
+</html>
